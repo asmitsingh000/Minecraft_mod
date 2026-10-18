@@ -1,5 +1,7 @@
 package net.asmit.pixle_lucia;
 
+import net.asmit.pixle_lucia.additionaltab.Creativetab;
+import net.asmit.pixle_lucia.item.Moditems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -13,9 +15,7 @@ public class Pixle_Lucia implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-	}
-
-	public static Identifier id(String path) {
-		return Identifier.fromNamespaceAndPath(MOD_ID, path);
+        Moditems.registerModitems();
+        Creativetab.registerModcreativeTab();
 	}
 }
