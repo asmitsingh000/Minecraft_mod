@@ -1,6 +1,7 @@
 package net.asmit.pixle_lucia;
 
 import net.asmit.pixle_lucia.additionaltab.Creativetab;
+import net.asmit.pixle_lucia.blocks.Modblocks;
 import net.asmit.pixle_lucia.item.Moditems;
 import net.fabricmc.api.ModInitializer;
 
@@ -17,5 +18,6 @@ public class Pixle_Lucia implements ModInitializer {
 	public void onInitialize() {
         Moditems.registerModitems();
         Creativetab.registerModcreativeTab();
+        Modblocks.RegistryModBlocks();
 	}
 }
