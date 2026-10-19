@@ -1,9 +1,14 @@
 {
   "item.pixle_lucia.fluroite":"Fluroite",
-  "item.pixle_lucia.raw_fluroite":"Raw_Fluroite",
+  "item.pixle_lucia.raw_fluroite":"Raw Fluroite",
+  "item.pixle_lucia.chisel":"Chisel",
+
+
+  "block.pixle_lucia.raw_fluroite_block":"Block of Raw fluroite",
   "block.pixle_lucia.fluroite_block": "Block of Fluroite",
   "block.pixle_lucia.fluroite_deepslate_ore": "Fluroite deepslate ore",
   "block.pixle_lucia.fluroite_end_ore": "Fluroite end ore",
+  "block.pixle_lucia.magic_blocks": "Magic Blocks",
 
 
   "creaivemodtab.pixle_lucia.fluroite_items": "Fluroite tab",

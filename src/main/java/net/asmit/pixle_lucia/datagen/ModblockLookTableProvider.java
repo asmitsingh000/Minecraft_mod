@@ -31,11 +31,16 @@ public class ModblockLookTableProvider extends FabricBlockLootSubProvider {
 //        dropSelf(Modblocks.FLUROIT_DEEPSLATE_ORE);
 //        dropSelf(Modblocks.FLUROIT_END_ORE);
         dropSelf(Modblocks.FLUROIT_BLOCK);
+        dropSelf(Modblocks.RAW_FLUROITE_BLOCK);
 
+        //FOR SINGLE DROPS LIKE IF YOU WANT IT TO DROP SOMETHING SINGLE THEN USE createOreDrop
+        add(Modblocks.MAGIC_BLOCKS,createOreDrop(Modblocks.MAGIC_BLOCKS,Moditems.CHISEL));
         add(Modblocks.FLUROIT_DEEPSLATE_ORE, createOreDrop(Modblocks.FLUROIT_DEEPSLATE_ORE, Moditems.RAW_FLUROITE));
         add(Modblocks.FLUROIT_END_ORE,createOreDrop(Modblocks.FLUROIT_END_ORE,Moditems.RAW_FLUROITE));
 
+        //IF YOU WANT THAT ENCHANTMENT SHOWS THE SKILLS THEN USE createMultipleOreDrops
         add(Modblocks.FLUROIT_END_ORE,createMultipleOreDrops(Modblocks.FLUROIT_END_ORE,Moditems.RAW_FLUROITE,5,8));
+//        add(Modblocks.FLUROIT_DEEPSLATE_ORE,createMultipleOreDrops(Modblocks.FLUROIT_DEEPSLATE_ORE,Moditems.RAW_FLUROITE,5,8));
     }
 
     public LootTable.Builder createMultipleOreDrops(final Block block, Item item, float minDrops, float maxDrops) {

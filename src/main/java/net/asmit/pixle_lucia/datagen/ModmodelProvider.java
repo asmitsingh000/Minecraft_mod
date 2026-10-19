@@ -20,6 +20,8 @@ public class ModmodelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialBlock(Modblocks.FLUROIT_BLOCK, TexturedModel.CUBE);
         blockModelGenerators.createTrivialBlock(Modblocks.FLUROIT_DEEPSLATE_ORE, TexturedModel.CUBE);
         blockModelGenerators.createTrivialBlock(Modblocks.FLUROIT_END_ORE, TexturedModel.CUBE);
+        blockModelGenerators.createTrivialBlock(Modblocks.RAW_FLUROITE_BLOCK, TexturedModel.CUBE);
+        blockModelGenerators.createTrivialBlock(Modblocks.MAGIC_BLOCKS, TexturedModel.CUBE);
     }
 
     @Override
@@ -27,5 +29,6 @@ public class ModmodelProvider extends FabricModelProvider {
         //THIS PART IS USED WHEN YOU HAVE ADDED NEW ITEMS
         itemModelGenerators.generateFlatItem(Moditems.FLUROITE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(Moditems.RAW_FLUROITE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(Moditems.CHISEL, ModelTemplates.FLAT_HANDHELD_ITEM);
     }
 }

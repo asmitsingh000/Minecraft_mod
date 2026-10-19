@@ -1,6 +1,7 @@
 package net.asmit.pixle_lucia.item;
 
 import net.asmit.pixle_lucia.Pixle_Lucia;
+import net.asmit.pixle_lucia.item.custom.ChiselItem;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -16,6 +17,7 @@ import java.util.function.Function;
 public class Moditems {
     public static final Item FLUROITE = registerItem("fluroite", Item::new);
     public static final Item RAW_FLUROITE = registerItem("raw_fluroite", Item::new);
+    public static final Item CHISEL = registerItem("chisel", properties -> new ChiselItem(properties.durability(32).repairable(Moditems.FLUROITE).enchantable(2)));
 
     public static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Pixle_Lucia.MOD_ID, name), function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Pixle_Lucia.MOD_ID, name)))));
@@ -24,9 +26,9 @@ public class Moditems {
     public static void registerModitems() {
         Pixle_Lucia.LOGGER.info("Registration mod items for " + Pixle_Lucia.MOD_ID);
 
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output ->{
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
             output.accept(FLUROITE);
             output.accept(RAW_FLUROITE);
-        } );
+        });
     }
 }

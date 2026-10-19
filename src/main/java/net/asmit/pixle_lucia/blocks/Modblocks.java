@@ -1,6 +1,7 @@
 package net.asmit.pixle_lucia.blocks;
 
 import net.asmit.pixle_lucia.Pixle_Lucia;
+import net.asmit.pixle_lucia.blocks.customBlocks.MagicBlocks;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -16,8 +17,10 @@ import java.util.function.Function;
 
 public class Modblocks {
     public static final Block FLUROIT_BLOCK  = registerBlock("fluroite_block",properties -> new Block(properties.destroyTime(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
-    public static final Block FLUROIT_DEEPSLATE_ORE  = registerBlock("fluroite_deepslate_ore",properties -> new Block(properties.destroyTime(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
-    public static final Block FLUROIT_END_ORE  = registerBlock("fluroite_end_ore",properties -> new Block(properties.destroyTime(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block FLUROIT_DEEPSLATE_ORE  = registerBlock("fluroite_deepslate_ore",properties -> new Block(properties.destroyTime(5f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+    public static final Block FLUROIT_END_ORE  = registerBlock("fluroite_end_ore",properties -> new Block(properties.destroyTime(5.5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block RAW_FLUROITE_BLOCK  = registerBlock("raw_fluroite_block",properties -> new Block(properties.destroyTime(3.7f).requiresCorrectToolForDrops().sound(SoundType.BONE_BLOCK)));
+    public static final Block MAGIC_BLOCKS = registerBlock("magic_blocks",properties -> new MagicBlocks(properties.destroyTime(2f).requiresCorrectToolForDrops().sound(SoundType.GLASS)));
 
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties,Block> function){

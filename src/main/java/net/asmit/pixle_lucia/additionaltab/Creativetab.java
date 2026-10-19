@@ -18,6 +18,7 @@ public class Creativetab {
             FabricCreativeModeTab.builder().icon(()->new ItemStack(Moditems.FLUROITE)).title(Component.translatable("creaivemodtab.pixle_lucia.fluroite_items")).displayItems((parameters, output) -> {
                 output.accept(Moditems.FLUROITE);
                 output.accept(Moditems.RAW_FLUROITE);
+                output.accept(Moditems.CHISEL);
                     })
                     .build());
 
@@ -26,9 +27,17 @@ public class Creativetab {
             FabricCreativeModeTab.builder().icon(()->new ItemStack(Modblocks.FLUROIT_BLOCK)).title(Component.translatable("creaivemodtab.pixle_lucia.fluroites_blocks")).displayItems((parameters, output) -> {
 //                        output.accept(Moditems.FLUROITE);
 //                        output.accept(Moditems.RAW_FLUROITE);
+                        output.accept(Modblocks.RAW_FLUROITE_BLOCK);
                         output.accept(Modblocks.FLUROIT_BLOCK);
                         output.accept(Modblocks.FLUROIT_DEEPSLATE_ORE);
                         output.accept(Modblocks.FLUROIT_END_ORE);
+                        output.accept(Modblocks.MAGIC_BLOCKS);
+                    })
+                    .build());
+    public static final CreativeModeTab TOOLS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Pixle_Lucia.MOD_ID,"fluroite_tools"),
+            FabricCreativeModeTab.builder().icon(()->new ItemStack(Moditems.CHISEL)).title(Component.translatable("creaivemodtab.pixle_lucia.fluroite_items")).displayItems((parameters, output) -> {
+                        output.accept(Moditems.CHISEL);
                     })
                     .build());
 

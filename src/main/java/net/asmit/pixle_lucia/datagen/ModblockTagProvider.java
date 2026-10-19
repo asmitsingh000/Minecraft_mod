@@ -18,8 +18,12 @@ public class ModblockTagProvider extends FabricTagsProvider.BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(Modblocks.FLUROIT_BLOCK)
+                .add(Modblocks.RAW_FLUROITE_BLOCK)
                 .add(Modblocks.FLUROIT_DEEPSLATE_ORE)
-                .add(Modblocks.FLUROIT_END_ORE);
-        valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
+                .add(Modblocks.FLUROIT_END_ORE)
+                .add(Modblocks.MAGIC_BLOCKS);
+        valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(Modblocks.FLUROIT_END_ORE).add(Modblocks.MAGIC_BLOCKS);
+//        valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(Modblocks.MAGIC_BLOCKS);
+        valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL).add(Modblocks.FLUROIT_DEEPSLATE_ORE);
     }
 }
