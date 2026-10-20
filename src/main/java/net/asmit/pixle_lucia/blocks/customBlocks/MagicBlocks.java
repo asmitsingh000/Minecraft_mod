@@ -1,6 +1,7 @@
 package net.asmit.pixle_lucia.blocks.customBlocks;
 
 import net.asmit.pixle_lucia.item.Moditems;
+import net.asmit.pixle_lucia.tags.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
@@ -52,7 +53,8 @@ public class MagicBlocks extends Block {
     }
 
     private boolean isValidItem(ItemStack item) {
-        return item.is(Moditems.FLUROITE) || item.is(Items.IRON_INGOT);
+
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEM);
     }
 
 }

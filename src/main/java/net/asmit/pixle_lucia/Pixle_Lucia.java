@@ -2,7 +2,9 @@ package net.asmit.pixle_lucia;
 
 import net.asmit.pixle_lucia.additionaltab.Creativetab;
 import net.asmit.pixle_lucia.blocks.Modblocks;
+import net.asmit.pixle_lucia.food.Modfood;
 import net.asmit.pixle_lucia.item.Moditems;
+import net.asmit.pixle_lucia.registries.Modfuels;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -19,5 +21,8 @@ public class Pixle_Lucia implements ModInitializer {
         Moditems.registerModitems();
         Creativetab.registerModcreativeTab();
         Modblocks.RegistryModBlocks();
+        Modfood.RegisterModfood();
+        Modfuels.RegisterFule();
+
 	}
 }

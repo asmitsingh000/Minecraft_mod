@@ -1,17 +1,30 @@
 {
   "item.pixle_lucia.fluroite":"Fluroite",
+  "item.pixle_lucia.aetherite_ingot":"Aetherite Ingot",
   "item.pixle_lucia.raw_fluroite":"Raw Fluroite",
   "item.pixle_lucia.chisel":"Chisel",
+  "item.pixle_lucia.strawberry":"Strawberry",
+  "item.pixle_lucia.combustible_spores":"Combustable Spores",
 
 
   "block.pixle_lucia.raw_fluroite_block":"Block of Raw fluroite",
   "block.pixle_lucia.fluroite_block": "Block of Fluroite",
   "block.pixle_lucia.fluroite_deepslate_ore": "Fluroite deepslate ore",
   "block.pixle_lucia.fluroite_end_ore": "Fluroite end ore",
-  "block.pixle_lucia.magic_blocks": "Magic Blocks",
+  "block.pixle_lucia.magic_blocks": "Magic Block",
+  "block.pixle_lucia.aetherite_block": "Aetherite Block",
+  "block.pixle_lucia.aetherite_ore": "Aetherite Ore Block",
+
+  "block.pixle_lucia.fluroite_stair": " Fluroite Stairs",
+  "block.pixle_lucia.fluroite_slab": "Fluroite Slab",
+  "block.pixle_lucia.aetherite_stair": " Aetherite Stairs",
+  "block.pixle_lucia.aetherite_slab": "Aetherite Slab",
 
 
-  "creaivemodtab.pixle_lucia.fluroite_items": "Fluroite tab",
+  "creaivemodtab.pixle_lucia.fluroite_items": "Fluroite Items",
+  "creaivemodtab.pixle_lucia.fluroite_food": "Custom Foods",
+  "creaivemodtab.pixle_lucia.fluroite_tools": "Fluroite Tools",
+  "creaivemodtab.pixle_lucia.fluroite_fuels": "Custom Fuels",
   "creaivemodtab.pixle_lucia.fluroites_blocks": "Fluroite blocks",
   "creaivemodtab.pixle_lucia.fluroite_armours": "Fluroite_armours"
 }

@@ -31,15 +31,24 @@ public class ModblockLookTableProvider extends FabricBlockLootSubProvider {
 //        dropSelf(Modblocks.FLUROIT_DEEPSLATE_ORE);
 //        dropSelf(Modblocks.FLUROIT_END_ORE);
         dropSelf(Modblocks.FLUROIT_BLOCK);
+        dropSelf(Modblocks.AETHERITE_BLOCK);
         dropSelf(Modblocks.RAW_FLUROITE_BLOCK);
+        dropSelf(Modblocks.FLUROITE_STARE);
+        dropSelf(Modblocks.AETHERITE_STAIRS);
+        dropSelf(Modblocks.FLUROITE_SLAB);
+        dropSelf(Modblocks.AETHERITE_SLAB);
+        add(Modblocks.FLUROITE_SLAB, this::createSlabItemTable);
+        add(Modblocks.AETHERITE_SLAB, this::createSlabItemTable);
+
 
         //FOR SINGLE DROPS LIKE IF YOU WANT IT TO DROP SOMETHING SINGLE THEN USE createOreDrop
-        add(Modblocks.MAGIC_BLOCKS,createOreDrop(Modblocks.MAGIC_BLOCKS,Moditems.CHISEL));
+        add(Modblocks.MAGIC_BLOCKS, createOreDrop(Modblocks.MAGIC_BLOCKS, Moditems.CHISEL));
         add(Modblocks.FLUROIT_DEEPSLATE_ORE, createOreDrop(Modblocks.FLUROIT_DEEPSLATE_ORE, Moditems.RAW_FLUROITE));
-        add(Modblocks.FLUROIT_END_ORE,createOreDrop(Modblocks.FLUROIT_END_ORE,Moditems.RAW_FLUROITE));
+        add(Modblocks.FLUROIT_END_ORE, createOreDrop(Modblocks.FLUROIT_END_ORE, Moditems.RAW_FLUROITE));
 
         //IF YOU WANT THAT ENCHANTMENT SHOWS THE SKILLS THEN USE createMultipleOreDrops
-        add(Modblocks.FLUROIT_END_ORE,createMultipleOreDrops(Modblocks.FLUROIT_END_ORE,Moditems.RAW_FLUROITE,5,8));
+        add(Modblocks.FLUROIT_END_ORE, createMultipleOreDrops(Modblocks.FLUROIT_END_ORE, Moditems.RAW_FLUROITE, 5, 8));
+        add(Modblocks.AETHERITE_ORE, createMultipleOreDrops(Modblocks.AETHERITE_ORE, Moditems.AETHERITE_INGOT, 2, 5));
 //        add(Modblocks.FLUROIT_DEEPSLATE_ORE,createMultipleOreDrops(Modblocks.FLUROIT_DEEPSLATE_ORE,Moditems.RAW_FLUROITE,5,8));
     }
 
@@ -47,7 +56,7 @@ public class ModblockLookTableProvider extends FabricBlockLootSubProvider {
         HolderLookup.RegistryLookup<Enchantment> enchantments = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createSilkTouchDispatchTable(
                 block,
-                (LootPoolEntryContainer.Builder<?>)this.applyExplosionDecay(
+                (LootPoolEntryContainer.Builder<?>) this.applyExplosionDecay(
                         block,
                         LootItem.lootTableItem(item)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))

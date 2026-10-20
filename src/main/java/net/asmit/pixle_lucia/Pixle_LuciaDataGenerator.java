@@ -1,12 +1,8 @@
 package net.asmit.pixle_lucia;
 
-import net.asmit.pixle_lucia.datagen.ModRecipeProvider;
-import net.asmit.pixle_lucia.datagen.ModblockLookTableProvider;
-import net.asmit.pixle_lucia.datagen.ModblockTagProvider;
-import net.asmit.pixle_lucia.datagen.ModmodelProvider;
+import net.asmit.pixle_lucia.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.minecraft.client.data.models.ModelProvider;
 
 public class Pixle_LuciaDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -17,8 +13,6 @@ public class Pixle_LuciaDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModblockTagProvider::new);
         pack.addProvider(ModblockLookTableProvider::new);
         pack.addProvider(ModRecipeProvider::new);
-
-
-
+        pack.addProvider(ModItemTagsProvider::new);
 	}
 }
