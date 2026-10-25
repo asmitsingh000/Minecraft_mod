@@ -39,6 +39,15 @@ public class ModblockLookTableProvider extends FabricBlockLootSubProvider {
         dropSelf(Modblocks.AETHERITE_SLAB);
         add(Modblocks.FLUROITE_SLAB, this::createSlabItemTable);
         add(Modblocks.AETHERITE_SLAB, this::createSlabItemTable);
+        dropSelf(Modblocks.FLUROITE_BUUTTON);
+        dropSelf(Modblocks.AETHERITE_BUUTTON);
+        dropSelf(Modblocks.FLUROITE_PRESSURE_PLATE);
+        dropSelf(Modblocks.AETHERITE_PRESSURE_PLATE);
+        dropSelf(Modblocks.FLUROITE_WALLS);
+        dropSelf(Modblocks.FLUROITE_FENCE);
+        dropSelf(Modblocks.FLUROITE_GATES);
+        dropSelf(Modblocks.FLUROITE_DOORS);
+        dropSelf(Modblocks.FLUROITE_TRAPDOORS);
 
 
         //FOR SINGLE DROPS LIKE IF YOU WANT IT TO DROP SOMETHING SINGLE THEN USE createOreDrop

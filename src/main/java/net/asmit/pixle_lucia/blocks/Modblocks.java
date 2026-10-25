@@ -9,11 +9,10 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 
 import java.util.function.Function;
 
@@ -36,6 +35,45 @@ public class Modblocks {
                     properties.strength(3f).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops()));
     public static final Block AETHERITE_SLAB = registerBlock("aetherite_slab", properties ->
             new SlabBlock(properties.strength(3f).sound(SoundType.SHELF).requiresCorrectToolForDrops()));
+
+    public static final Block FLUROITE_BUUTTON = registerBlock("fluroite_button", properties ->
+            new ButtonBlock(BlockSetType.IRON,20,
+                    properties.strength(3f)
+                            .sound(SoundType.SHELF)
+                            .noCollision()));
+
+    public static final Block FLUROITE_PRESSURE_PLATE = registerBlock("fluroite_pressure_plate",properties ->
+            new PressurePlateBlock(BlockSetType.IRON,
+                    properties.strength(3f)
+                            .sound(SoundType.NETHER_WOOD)
+                            .noCollision()));
+
+    public static final Block AETHERITE_BUUTTON = registerBlock("aetherite_button", properties ->
+            new ButtonBlock(BlockSetType.IRON,20,
+                    properties.strength(3f)
+                            .sound(SoundType.SHELF)
+                            .noCollision()));
+
+    public static final Block AETHERITE_PRESSURE_PLATE = registerBlock("aetherite_pressure_plate",properties ->
+            new PressurePlateBlock(BlockSetType.IRON,
+                    properties.strength(3f)
+                            .sound(SoundType.NETHER_WOOD)
+                            .noCollision()));
+
+    public static  final  Block FLUROITE_FENCE = registerBlock("fluroite_fence", properties ->
+            new FenceBlock(properties.strength(3f).requiresCorrectToolForDrops()));
+
+    public static  final  Block FLUROITE_GATES = registerBlock("fluroite_gates", properties ->
+            new FenceGateBlock(WoodType.OAK,properties.strength(3f).requiresCorrectToolForDrops()));
+
+    public static  final  Block FLUROITE_WALLS = registerBlock("fluroite_walls", properties ->
+            new WallBlock(properties.strength(3f).requiresCorrectToolForDrops()));
+
+    public  static final Block FLUROITE_DOORS = registerBlock("fluroite_doors", properties ->
+            new DoorBlock(BlockSetType.CRIMSON,properties.strength(2.5f).noOcclusion().requiresCorrectToolForDrops()));
+
+    public  static final Block FLUROITE_TRAPDOORS = registerBlock("fluroite_trapdoors", properties ->
+            new TrapDoorBlock(BlockSetType.CRIMSON,properties.strength(2.5f).noOcclusion().requiresCorrectToolForDrops()));
 
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {

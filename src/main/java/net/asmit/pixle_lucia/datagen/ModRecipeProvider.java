@@ -8,6 +8,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
@@ -53,18 +54,132 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("fluroite").save(recipeOutput);
 
                 stairBuilder(Modblocks.FLUROITE_STARE, Ingredient.of(Modblocks.FLUROIT_BLOCK))
-                        .unlockedBy(getHasName(Modblocks.FLUROIT_BLOCK),has(Modblocks.RAW_FLUROITE_BLOCK))
+                        .unlockedBy(getHasName(Modblocks.FLUROIT_BLOCK), has(Modblocks.RAW_FLUROITE_BLOCK))
                         .group("fluroite")
                         .save(output);
 
-                slab(RecipeCategory.BUILDING_BLOCKS,Modblocks.FLUROITE_SLAB,Modblocks.FLUROIT_BLOCK);
+                slab(RecipeCategory.BUILDING_BLOCKS, Modblocks.FLUROITE_SLAB, Modblocks.FLUROIT_BLOCK);
 
                 stairBuilder(Modblocks.AETHERITE_STAIRS, Ingredient.of(Moditems.AETHERITE_INGOT))
-                        .unlockedBy(getHasName(Moditems.AETHERITE_INGOT),has(Modblocks.AETHERITE_BLOCK))
+                        .unlockedBy(getHasName(Moditems.AETHERITE_INGOT), has(Modblocks.AETHERITE_BLOCK))
                         .group("aetherite")
                         .save(output);
 
-                slab(RecipeCategory.BUILDING_BLOCKS,Modblocks.AETHERITE_SLAB,Moditems.AETHERITE_INGOT);
+                slab(RecipeCategory.BUILDING_BLOCKS, Modblocks.AETHERITE_SLAB, Moditems.AETHERITE_INGOT);
+
+
+                buttonBuilder(Modblocks.FLUROITE_BUUTTON, Ingredient.of(Moditems.FLUROITE))
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .group("fluroite")
+                        .save(output);
+                buttonBuilder(Modblocks.AETHERITE_BUUTTON, Ingredient.of(Moditems.AETHERITE_INGOT))
+                        .unlockedBy(getHasName(Moditems.AETHERITE_INGOT), has(Modblocks.AETHERITE_BLOCK))
+                        .group("aetherite")
+                        .save(output);
+
+                pressurePlate(Modblocks.FLUROITE_PRESSURE_PLATE, Moditems.FLUROITE);
+                pressurePlate(Modblocks.AETHERITE_PRESSURE_PLATE, Moditems.AETHERITE_INGOT);
+
+                fenceBuilder(Modblocks.FLUROITE_FENCE, Ingredient.of(Moditems.FLUROITE))
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .group("fluroite")
+                        .save(output);
+                fenceGateBuilder(Modblocks.FLUROITE_GATES, Ingredient.of(Moditems.FLUROITE))
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .group("fluroite")
+                        .save(output);
+                wall(RecipeCategory.BUILDING_BLOCKS, Modblocks.FLUROITE_WALLS, Moditems.FLUROITE);
+
+                doorBuilder(Modblocks.FLUROITE_DOORS, Ingredient.of(Moditems.FLUROITE))
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .group("fluroite")
+                        .save(recipeOutput);
+
+                trapdoorBuilder(Modblocks.FLUROITE_TRAPDOORS, Ingredient.of(Moditems.FLUROITE))
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .group("fluroite")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, Moditems.FLUROITE_SWORDS)
+                        .pattern("F")
+                        .pattern("F")
+                        .pattern("S")
+                        .define('F', Moditems.FLUROITE)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.TOOLS, Moditems.FLUROITE_AXE)
+                        .pattern("FF")
+                        .pattern("FS")
+                        .pattern(" S")
+                        .define('F', Moditems.FLUROITE)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.TOOLS, Moditems.FLUROITE_PICKAXE)
+                        .pattern("FFF")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .define('F', Moditems.FLUROITE)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.TOOLS, Moditems.FLUROITE_HOE)
+                        .pattern("FF")
+                        .pattern(" S")
+                        .pattern(" S")
+                        .define('F', Moditems.FLUROITE)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.COMBAT, Moditems.FLUORITE_SPEARS)
+                        .pattern("  F")
+                        .pattern(" S ")
+                        .pattern("S  ")
+                        .define('F', Moditems.FLUROITE)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .save(recipeOutput);
+
+
+                shaped(RecipeCategory.COMBAT, Moditems.FLUROITE_HELMET)
+                        .pattern("FFF")
+                        .pattern("F F")
+                        .pattern("   ")
+                        .define('F', Moditems.FLUROITE)
+//                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .save(recipeOutput);
+                shaped(RecipeCategory.COMBAT, Moditems.FLUROITE_CHESTPLATE)
+                        .pattern("F F")
+                        .pattern("FFF")
+                        .pattern("FFF")
+                        .define('F', Moditems.FLUROITE)
+//                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .save(recipeOutput);
+                shaped(RecipeCategory.COMBAT, Moditems.FLUROITE_LEGGINGS)
+                        .pattern("FFF")
+                        .pattern("F F")
+                        .pattern("F F")
+                        .define('F', Moditems.FLUROITE)
+//                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .save(recipeOutput);
+                shaped(RecipeCategory.COMBAT, Moditems.FLUROITE_BOOTS)
+                        .pattern("   ")
+                        .pattern("F F")
+                        .pattern("F F")
+                        .define('F', Moditems.FLUROITE)
+//                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .save(recipeOutput);
+
+
             }
         };
     }

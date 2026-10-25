@@ -7,6 +7,16 @@
   "item.pixle_lucia.combustible_spores":"Combustable Spores",
 
 
+  "item.pixle_lucia.fluroite_sword":"Fluroite Sword",
+  "item.pixle_lucia.fluroite_pickaxe":"Fluroite Pickaxe",
+  "item.pixle_lucia.fluroite_axe":"Fluroite axe",
+  "item.pixle_lucia.fluroite_spear":"Fluroite Spear",
+  "item.pixle_lucia.fluroite_hoe":"Fluroite hoe",
+  "item.pixle_lucia.fluroite_helmet":"Fluroite Helmet",
+  "item.pixle_lucia.fluroite_chestplate":"Fluroite Chestplate",
+  "item.pixle_lucia.fluroite_leggings":"Fluroite Leggings",
+  "item.pixle_lucia.fluroite_boots":"Fluroite Boots",
+
   "block.pixle_lucia.raw_fluroite_block":"Block of Raw fluroite",
   "block.pixle_lucia.fluroite_block": "Block of Fluroite",
   "block.pixle_lucia.fluroite_deepslate_ore": "Fluroite deepslate ore",
@@ -19,6 +29,17 @@
   "block.pixle_lucia.fluroite_slab": "Fluroite Slab",
   "block.pixle_lucia.aetherite_stair": " Aetherite Stairs",
   "block.pixle_lucia.aetherite_slab": "Aetherite Slab",
+  "block.pixle_lucia.fluroite_pressure_plate": "Fluroite Pressure Plate",
+  "block.pixle_lucia.fluroite_button": "Fluroite Button",
+  "block.pixle_lucia.aetherite_pressure_plate": "Aetherite Slab",
+  "block.pixle_lucia.aetherite_button": "Aetherite Button",
+
+
+  "block.pixle_lucia.fluroite_fence": "Fluroite fence",
+  "block.pixle_lucia.fluroite_gates": "Fluroite gate",
+  "block.pixle_lucia.fluroite_walls": "Fluroite wall",
+  "block.pixle_lucia.fluroite_doors": "Fluroite Doors",
+  "block.pixle_lucia.fluroite_trapdoors": "Fluroite Trapdoors",
 
 
   "creaivemodtab.pixle_lucia.fluroite_items": "Fluroite Items",

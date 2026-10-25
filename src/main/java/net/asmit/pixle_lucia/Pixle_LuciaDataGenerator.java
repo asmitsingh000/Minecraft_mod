@@ -14,5 +14,6 @@ public class Pixle_LuciaDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModblockLookTableProvider::new);
         pack.addProvider(ModRecipeProvider::new);
         pack.addProvider(ModItemTagsProvider::new);
+        pack.addProvider(ModEquipmentAssetProvider::new);
 	}
 }

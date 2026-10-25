@@ -38,7 +38,7 @@ public class MagicBlocks extends Block {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState onState, Entity entity) {
         if(entity instanceof Player player){
-            player.addEffect(new MobEffectInstance(MobEffects.GLOWING,300));
+            player.addEffect(new MobEffectInstance(MobEffects.REGENERATION,300));
         }
 
         if(entity instanceof ItemEntity itementity){
