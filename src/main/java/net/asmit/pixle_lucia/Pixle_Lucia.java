@@ -4,7 +4,11 @@ import net.asmit.pixle_lucia.additionaltab.Creativetab;
 import net.asmit.pixle_lucia.blocks.Modblocks;
 import net.asmit.pixle_lucia.food.Modfood;
 import net.asmit.pixle_lucia.item.Moditems;
+import net.asmit.pixle_lucia.registries.ModCompostables;
+import net.asmit.pixle_lucia.registries.ModFlammableBlocks;
+import net.asmit.pixle_lucia.registries.ModStrippableBlocks;
 import net.asmit.pixle_lucia.registries.Modfuels;
+import net.asmit.pixle_lucia.worlgen.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -23,6 +27,10 @@ public class Pixle_Lucia implements ModInitializer {
         Modblocks.RegistryModBlocks();
         Modfood.RegisterModfood();
         Modfuels.RegisterFule();
-
+        ModWorldGeneration.generateModWorldGen();
+        ModCompostables.registerCompostables();
+        ModFlammableBlocks.registerFlammableBlocks();
+        ModStrippableBlocks.registerStrippableBlocks();
 	}
+
 }

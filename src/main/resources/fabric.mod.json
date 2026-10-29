@@ -3,15 +3,15 @@
 	"id": "pixle_lucia",
 	"version": "${version}",
 	"name": "Pixle_Lucia",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This is a indevelopment mod which for now adds some ores, new metals, new armor and some new tools",
 	"authors": [
-		"Me!"
+		"ASMIT_SINGH"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "https://asmitsingh.info.np/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT-License",
 	"icon": "assets/pixle_lucia/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -25,8 +25,9 @@
 	"mixins": [
 		"pixle_lucia.mixins.json"
 	],
-	"depends": {
-		"fabricloader": ">=0.19.5",
+  "accessWidener": "pixlmod.classtweaker",
+  "depends": {
+		"fabricloader": ">=0.19.2",
 		"minecraft": "~26.1.2",
 		"java": ">=25",
 		"fabric-api": "*"

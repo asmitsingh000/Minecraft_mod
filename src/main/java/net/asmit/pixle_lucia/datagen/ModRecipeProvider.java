@@ -2,6 +2,7 @@ package net.asmit.pixle_lucia.datagen;
 
 import net.asmit.pixle_lucia.blocks.Modblocks;
 import net.asmit.pixle_lucia.item.Moditems;
+import net.asmit.pixle_lucia.tags.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;
@@ -136,7 +137,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
                         .save(recipeOutput);
 
-                shaped(RecipeCategory.COMBAT, Moditems.FLUORITE_SPEARS)
+                shaped(RecipeCategory.COMBAT, Moditems.FLUROITE_SPEAR)
                         .pattern("  F")
                         .pattern(" S ")
                         .pattern("S  ")
@@ -178,6 +179,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 //                        .define('S', Items.STICK)
                         .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
                         .save(recipeOutput);
+
+                woodFromLogs(Modblocks.BALSA_WOOD,Modblocks.BALSA_LOG);
+                woodFromLogs(Modblocks.STRIPPED_BALSA_WOOD,Modblocks.STRTIPPED_BALSA_LOG);
+                planksFromLog(Modblocks.BALSA_PLANKS, ModTags.Items.BALSA_LOGS,4);
 
 
             }

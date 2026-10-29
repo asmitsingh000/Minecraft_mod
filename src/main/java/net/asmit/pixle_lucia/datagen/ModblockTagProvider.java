@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -23,6 +24,7 @@ public class ModblockTagProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(Modblocks.RAW_FLUROITE_BLOCK)
                 .add(Modblocks.FLUROIT_DEEPSLATE_ORE)
                 .add(Modblocks.FLUROIT_END_ORE)
+                .add(Modblocks.FLUROIT_NETHER_ORE)
                 .add(Modblocks.AETHERITE_ORE)
                 .add(Modblocks.FLUROITE_STARE)
                 .add(Modblocks.FLUROITE_SLAB)
@@ -35,6 +37,7 @@ public class ModblockTagProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(Modblocks.AETHERITE_BUUTTON)
                 .add(Modblocks.AETHERITE_PRESSURE_PLATE)
                 .add(Modblocks.FLUROITE_WALLS)
+                .add(Modblocks.FLUROIT_ORE)
                 .add(Modblocks.MAGIC_BLOCKS);
 
         valueLookupBuilder(BlockTags.MINEABLE_WITH_AXE)
@@ -43,6 +46,8 @@ public class ModblockTagProvider extends FabricTagsProvider.BlockTagsProvider {
 
         valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(Modblocks.FLUROIT_END_ORE)
+                .add(Modblocks.FLUROIT_NETHER_ORE)
+                .add(Modblocks.FLUROIT_ORE)
                 .add(Modblocks.FLUROITE_GATES)
                 .add(Modblocks.FLUROITE_TRAPDOORS)
                 .add(Modblocks.FLUROITE_GATES)
@@ -96,10 +101,31 @@ public class ModblockTagProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(Modblocks.AETHERITE_BLOCK)
                 .add(Modblocks.AETHERITE_SLAB)
                 .add(Modblocks.AETHERITE_BUUTTON)
+                .add(Modblocks.AETHERITE_BUUTTON)
                 .add(Modblocks.AETHERITE_PRESSURE_PLATE)
                 .add(Modblocks.AETHERITE_STAIRS);
 
-        valueLookupBuilder(ModTags.Blocks.INCORRECT_FOR_FLUROITE_TOOLS)
-                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+//        valueLookupBuilder(ModTags.Blocks.INCORRECT_FOR_FLUROITE_TOOLS)
+//                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+
+        valueLookupBuilder(BlockTags.CROPS)
+                .add(Modblocks.STRAWBERRY_CROP);
+
+        valueLookupBuilder(ModTags.Blocks.BALSA_LOGS)
+                .add(Modblocks.STRTIPPED_BALSA_LOG)
+                .add(Modblocks.BALSA_LEAVES)
+                .add(Modblocks.BALSA_PLANKS)
+                .add(Modblocks.STRIPPED_BALSA_WOOD);
+
+        valueLookupBuilder(BlockTags.LOGS)
+                .addTag(ModTags.Blocks.BALSA_LOGS);
+
+        valueLookupBuilder(BlockTags.PLANKS)
+                .add(Modblocks.BALSA_PLANKS);
+
+        valueLookupBuilder(BlockTags.LEAVES)
+                .add(Modblocks.BALSA_LEAVES);
+
     }
 }

@@ -17,6 +17,9 @@ fabricApi {
 		modId = "pixle_lucia"
 	}
 }
+loom{
+    accessWidenerPath=file("src/main/resources/pixlmod.classtweaker")
+}
 
 dependencies {
 	// To change the versions see the gradle.properties file

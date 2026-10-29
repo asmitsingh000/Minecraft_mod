@@ -37,8 +37,9 @@ public class Creativetab {
             (parameters, output) -> {
                 // Ores
                 output.accept(Modblocks.FLUROIT_DEEPSLATE_ORE);
-                output.accept(Modblocks.FLUROIT_END_ORE);
+                output.accept(Modblocks.FLUROIT_ORE);
                 output.accept(Modblocks.AETHERITE_ORE);
+                output.accept(Modblocks.FLUROIT_NETHER_ORE);
 
                 // Storage blocks
                 output.accept(Modblocks.RAW_FLUROITE_BLOCK);
@@ -72,20 +73,39 @@ public class Creativetab {
             "fluroite_tools_tab",
             "creaivemodtab.pixle_lucia.fluroite_tools",
             Moditems.CHISEL,
-            (parameters, output) ->{
+            (parameters, output) -> {
                 output.accept(Moditems.CHISEL);
                 output.accept(Moditems.FLUROITE_SWORDS);
                 output.accept(Moditems.FLUROITE_PICKAXE);
                 output.accept(Moditems.FLUROITE_AXE);
-                output.accept(Moditems.FLUORITE_SPEARS);
+                output.accept(Moditems.FLUROITE_SPEAR);
                 output.accept(Moditems.FLUROITE_HOE);
+                output.accept(Modblocks.BALSA_LEAVES);
+                output.accept(Modblocks.BALSA_WOOD);
+                output.accept(Modblocks.BALSA_LOG);
+                output.accept(Modblocks.BALSA_PLANKS);
+                output.accept(Modblocks.STRIPPED_BALSA_WOOD);
+                output.accept(Modblocks.STRTIPPED_BALSA_LOG);
             });
 
     public static final CreativeModeTab FOOD_TAB = register(
             "custom_food_tab",
             "creaivemodtab.pixle_lucia.fluroite_food",
             Moditems.STRAWBERY,
-            (parameters, output) -> output.accept(Moditems.STRAWBERY));
+            (parameters, output) -> {
+                output.accept(Moditems.STRAWBERY);
+                output.accept(Moditems.HONEY_BERRIES);
+
+            });
+
+    public static final CreativeModeTab CROPS_TAB = register(
+            "custom_crop_tab",
+            "creativemodtab.pixle_lucia.fluroite_crops",
+            Moditems.STRAWBERRY_SEEDS,
+            (parameters, output) -> {
+                output.accept(Moditems.STRAWBERRY_SEEDS);
+
+            });
 
     public static final CreativeModeTab FUEL_TAB = register(
             "custom_fuels_tab",

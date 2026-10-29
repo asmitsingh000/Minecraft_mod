@@ -21,11 +21,15 @@ import java.util.function.Function;
 
 public class Modfood {
     public static final FoodProperties STRAWBERY = new FoodProperties.Builder().nutrition(12).saturationModifier(2f).build();
+    public static final FoodProperties HONEY_BERRIES = new FoodProperties.Builder().nutrition(12).saturationModifier(2f).build();
 
     public static final Consumable STRAWBERY_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(1.6f)
             .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.REGENERATION,100),100f)).build();
-
+    public static final Consumable HONEY_BERRIES_CONSUMABLE = Consumables.defaultFood()
+            .consumeSeconds(1.3f)
+            .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.STRENGTH,300),50f))
+            .build();
     public static void RegisterModfood(){
         Pixle_Lucia.LOGGER.info("Registration of the mod food" + Pixle_Lucia.MOD_ID);
     }

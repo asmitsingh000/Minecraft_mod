@@ -7,5 +7,9 @@ import net.minecraft.world.item.ToolMaterial;
 public class ModToolMaterials {
 
     public static final ToolMaterial FLUROITE = new ToolMaterial(ModTags.Blocks.INCORRECT_FOR_FLUROITE_TOOLS,
-            3012,10f,5.6f,20, ModTags.Items.FLUROITE_REPAIR);
+            2300,
+            9f,
+            9f,
+            20,
+            ModTags.Items.FLUROITE_REPAIR);
 }
