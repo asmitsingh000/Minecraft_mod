@@ -64,6 +64,8 @@ public class ModblockLookTableProvider extends FabricBlockLootSubProvider {
         dropSelf(Modblocks.BALSA_PLANKS);
         dropSelf(Modblocks.STRIPPED_BALSA_WOOD);
         dropSelf(Modblocks.STRTIPPED_BALSA_LOG);
+        dropSelf(Modblocks.BALSA_SAPLING);
+        add(Modblocks.POTTED_BALSA_SAPLING,block -> createPotFlowerItemTable(Modblocks.BALSA_SAPLING));
 
 
         this.add(Modblocks.STRAWBERRY_CROP, this.createCropDrops(Modblocks.STRAWBERRY_CROP, Moditems.STRAWBERY, Moditems.STRAWBERRY_SEEDS,

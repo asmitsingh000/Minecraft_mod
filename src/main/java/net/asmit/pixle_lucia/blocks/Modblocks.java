@@ -4,6 +4,7 @@ import net.asmit.pixle_lucia.Pixle_Lucia;
 import net.asmit.pixle_lucia.blocks.customBlocks.HoneyBerryBushBlock;
 import net.asmit.pixle_lucia.blocks.customBlocks.MagicBlocks;
 import net.asmit.pixle_lucia.blocks.customBlocks.StrawberryCropBlock;
+import net.asmit.pixle_lucia.worlgen.tree.ModTreeGrowers;
 import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.Registry;
 import net.minecraft.core.particles.ParticleTypes;
@@ -130,6 +131,15 @@ public class Modblocks {
                     .isSuffocating(Blocks::never)
                     .isViewBlocking(Blocks::never)
                     .isRedstoneConductor(Blocks::never)));
+
+    public static final Block BALSA_SAPLING = registerBlock("balsa_sapling", properties ->
+            new SaplingBlock(ModTreeGrowers.BALSA,properties
+                    .mapColor(MapColor.PLANT).noCollision().randomTicks().instabreak()
+                    .sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
+
+    public static final Block POTTED_BALSA_SAPLING = registerBlockWithoutBlockItem("potted_balsa_sapling",
+            properties -> new FlowerPotBlock(BALSA_SAPLING, properties
+                    .instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Pixle_Lucia.MOD_ID, name))));

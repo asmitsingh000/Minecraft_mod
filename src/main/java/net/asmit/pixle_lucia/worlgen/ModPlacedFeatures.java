@@ -1,11 +1,15 @@
 package net.asmit.pixle_lucia.worlgen;
 
 import net.asmit.pixle_lucia.Pixle_Lucia;
+import net.asmit.pixle_lucia.blocks.Modblocks;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.level.block.VegetationBlock;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
@@ -16,6 +20,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> OVERWORLD_ORE_PLACED_KEY = registerKey("overworld_ore_placed_key");
     public static final ResourceKey<PlacedFeature> NETHER_ORE_PLACED_KEY = registerKey("nether_ore_placed_key");
     public static final ResourceKey<PlacedFeature> END_ORE_PLACED_KEY = registerKey("end_ore_placed_key");
+    public static final ResourceKey<PlacedFeature> BALSA_PLACED_KEY = registerKey("balsa_placed_key");
+    public static final ResourceKey<PlacedFeature> HONEY_BERRY_BUSH_PLACED_KEY = registerKey("honey_berry_bush_placed_key");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -37,6 +43,13 @@ public class ModPlacedFeatures {
                 configuredFeatures.getOrThrow(ModConfiguredFeatures.END_FLUROITE_ORE_KEY),
                 orePlacement(CountPlacement.of(12),
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(100))));
+
+        register(context,BALSA_PLACED_KEY,configuredFeatures.getOrThrow(ModConfiguredFeatures.BALSA_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3,0.1f,2),
+                        Modblocks.BALSA_SAPLING));
+
+        register(context,HONEY_BERRY_BUSH_PLACED_KEY,configuredFeatures.getOrThrow(ModConfiguredFeatures.HONEY_BERRY_BUSH_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(32),InSquarePlacement.spread(),PlacementUtils.HEIGHTMAP_WORLD_SURFACE,BiomeFilter.biome()));
     }
 
     private static List<PlacementModifier> orePlacement(PlacementModifier count, PlacementModifier height) {

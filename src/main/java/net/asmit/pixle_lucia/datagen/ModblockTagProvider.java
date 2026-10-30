@@ -127,5 +127,11 @@ public class ModblockTagProvider extends FabricTagsProvider.BlockTagsProvider {
         valueLookupBuilder(BlockTags.LEAVES)
                 .add(Modblocks.BALSA_LEAVES);
 
+        valueLookupBuilder(BlockTags.SAPLINGS)
+                .add(Modblocks.BALSA_SAPLING);
+
+        valueLookupBuilder(BlockTags.FLOWER_POTS)
+                .add(Modblocks.POTTED_BALSA_SAPLING);
+
     }
 }

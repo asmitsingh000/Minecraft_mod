@@ -38,9 +38,9 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider{
 
 
         valueLookupBuilder(ModTags.Items.BALSA_LOGS)
+                .add(Modblocks.BALSA_LOG.asItem())
+                .add(Modblocks.BALSA_WOOD.asItem())
                 .add(Modblocks.STRTIPPED_BALSA_LOG.asItem())
-                .add(Modblocks.BALSA_LEAVES.asItem())
-                .add(Modblocks.BALSA_PLANKS.asItem())
                 .add(Modblocks.STRIPPED_BALSA_WOOD.asItem());
 
         valueLookupBuilder(ItemTags.LOGS_THAT_BURN)
@@ -51,5 +51,9 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider{
 
         valueLookupBuilder(ItemTags.LEAVES)
                 .add(Modblocks.BALSA_LEAVES.asItem());
+
+    valueLookupBuilder(ItemTags.SAPLINGS)
+                .add(Modblocks.BALSA_SAPLING.asItem());
+
     }
 }

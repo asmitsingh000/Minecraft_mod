@@ -56,6 +56,7 @@ public class ModmodelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(Modblocks.BALSA_PLANKS);
         blockModelGenerators.createTrivialBlock(Modblocks.BALSA_LEAVES,TexturedModel.LEAVES);
 
+        blockModelGenerators.createPlantWithDefaultItem(Modblocks.BALSA_SAPLING,Modblocks.POTTED_BALSA_SAPLING,BlockModelGenerators.PlantType.NOT_TINTED);
 
 
     }
