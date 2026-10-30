@@ -74,6 +74,7 @@ public class ModmodelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(Moditems.FLUROITE_SWORDS, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(Moditems.FLUROITE_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(Moditems.FLUROITE_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(Moditems.FLUROITE_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateSpear(Moditems.FLUROITE_SPEAR);
 
         itemModelGenerators.generateTrimmableItem(Moditems.FLUROITE_HELMET, ModArmorMaterials.FLUROITE_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);

@@ -137,6 +137,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
                         .save(recipeOutput);
 
+                shaped(RecipeCategory.TOOLS, Moditems.FLUROITE_SHOVEL)
+                        .pattern(" F")
+                        .pattern(" S")
+                        .pattern(" S")
+                        .define('F', Moditems.FLUROITE)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
+                        .save(recipeOutput);
+
                 shaped(RecipeCategory.COMBAT, Moditems.FLUROITE_SPEAR)
                         .pattern("  F")
                         .pattern(" S ")

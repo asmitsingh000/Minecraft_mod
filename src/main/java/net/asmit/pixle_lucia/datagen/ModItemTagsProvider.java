@@ -30,6 +30,7 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider{
         valueLookupBuilder(ItemTags.PICKAXES).add(Moditems.FLUROITE_PICKAXE);
         valueLookupBuilder(ItemTags.AXES).add(Moditems.FLUROITE_AXE);
         valueLookupBuilder(ItemTags.HOES).add(Moditems.FLUROITE_HOE);
+        valueLookupBuilder(ItemTags.SHOVELS).add(Moditems.FLUROITE_SHOVEL);
 
         valueLookupBuilder(ItemTags.HEAD_ARMOR).add(Moditems.FLUROITE_HELMET);
         valueLookupBuilder(ItemTags.CHEST_ARMOR).add(Moditems.FLUROITE_CHESTPLATE);

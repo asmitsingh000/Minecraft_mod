@@ -89,6 +89,7 @@ public class Creativetab {
                 output.accept(Moditems.FLUROITE_PICKAXE);
                 output.accept(Moditems.FLUROITE_AXE);
                 output.accept(Moditems.FLUROITE_HOE);
+                output.accept(Moditems.FLUROITE_SHOVEL);
                 output.accept(Moditems.FLUROITE_SWORDS);
                 output.accept(Moditems.FLUROITE_SPEAR);
             });

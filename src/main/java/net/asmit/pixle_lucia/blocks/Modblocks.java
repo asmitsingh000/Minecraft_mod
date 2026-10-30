@@ -119,8 +119,8 @@ public class Modblocks {
                     .instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).ignitedByLava()));
 
     public static final Block BALSA_LEAVES = registerBlock("balsa_leaves", properties ->
-            new UntintedParticleLeavesBlock(0.1f, ParticleTypes.CHERRY_LEAVES, properties
-                    .mapColor(Blocks.PALE_OAK_LEAVES.defaultMapColor())
+            new UntintedParticleLeavesBlock(0.1f, ParticleTypes.CHERRY_LEAVES,properties
+                    .mapColor(MapColor.COLOR_GREEN)
                     .strength(0.2f)
                     .sound(SoundType.GRASS)
                     .noOcclusion()

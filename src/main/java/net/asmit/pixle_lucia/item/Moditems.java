@@ -46,6 +46,9 @@ public static final Item FLUROITE_AXE = registerItem("fluroite_axe",
     public static final Item FLUROITE_HOE = registerItem("fluroite_hoe", properties ->
             new HoeItem(ModToolMaterials.FLUROITE,5f,-3.0f,properties.fireResistant()));
 
+    public static final Item FLUROITE_SHOVEL = registerItem("fluroite_shovel", properties ->
+            new ShovelItem(ModToolMaterials.FLUROITE,5f,-3.0f,properties.fireResistant()));
+
     public static final Item FLUROITE_SPEAR = registerItem("fluroite_spear",properties ->
             new Item(properties.spear(ModToolMaterials.FLUROITE,
                     1.15F,
