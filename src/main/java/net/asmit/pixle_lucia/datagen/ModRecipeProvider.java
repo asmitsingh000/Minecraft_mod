@@ -9,11 +9,13 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 
+import javax.sound.midi.Receiver;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -100,6 +102,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
                         .group("fluroite")
                         .save(output);
+
+                shaped(RecipeCategory.TOOLS, Moditems.CHISEL)
+                        .pattern("  I")
+                        .pattern(" F ")
+                        .pattern("S  ")
+                        .define('I', Items.IRON_INGOT)
+                        .define('F', Moditems.FLUROITE)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(Moditems.RAW_FLUROITE), has(Moditems.FLUROITE))
+                        .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                        .save(recipeOutput);
 
                 shaped(RecipeCategory.COMBAT, Moditems.FLUROITE_SWORDS)
                         .pattern("F")
@@ -189,9 +202,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Moditems.FLUROITE), has(Moditems.FLUROITE))
                         .save(recipeOutput);
 
-                woodFromLogs(Modblocks.BALSA_WOOD,Modblocks.BALSA_LOG);
-                woodFromLogs(Modblocks.STRIPPED_BALSA_WOOD,Modblocks.STRTIPPED_BALSA_LOG);
-                planksFromLog(Modblocks.BALSA_PLANKS, ModTags.Items.BALSA_LOGS,4);
+                woodFromLogs(Modblocks.BALSA_WOOD, Modblocks.BALSA_LOG);
+                woodFromLogs(Modblocks.STRIPPED_BALSA_WOOD, Modblocks.STRTIPPED_BALSA_LOG);
+                planksFromLog(Modblocks.BALSA_PLANKS, ModTags.Items.BALSA_LOGS, 4);
 
 
             }

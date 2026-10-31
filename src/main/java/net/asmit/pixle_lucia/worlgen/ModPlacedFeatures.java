@@ -35,13 +35,13 @@ public class ModPlacedFeatures {
         // NETHER: ancient debris jaisa -> 1 vein/chunk, Y 8 se 24 ke beech
         register(context, NETHER_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_FLUROITE_ORE_KEY),
-                orePlacement(CountPlacement.of(1),
+                orePlacement(CountPlacement.of(3),
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(8), VerticalAnchor.absolute(24))));
 
         // END: jaisa tha waisa hi
         register(context, END_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(ModConfiguredFeatures.END_FLUROITE_ORE_KEY),
-                orePlacement(CountPlacement.of(12),
+                orePlacement(CountPlacement.of(6),
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(100))));
 
         register(context,BALSA_PLACED_KEY,configuredFeatures.getOrThrow(ModConfiguredFeatures.BALSA_KEY),

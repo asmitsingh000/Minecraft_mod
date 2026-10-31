@@ -58,6 +58,7 @@ public class ModblockLookTableProvider extends FabricBlockLootSubProvider {
         dropSelf(Modblocks.FLUROITE_GATES);
         dropSelf(Modblocks.FLUROITE_DOORS);
         dropSelf(Modblocks.FLUROITE_TRAPDOORS);
+        dropSelf(Modblocks.MAGIC_BLOCKS);
         //BALSA TREES THINGS
         add(Modblocks.BALSA_LEAVES,block -> createLeavesDrops(block,Modblocks.BALSA_LEAVES,NORMAL_LEAVES_SAPLING_CHANCES));
         dropSelf(Modblocks.BALSA_LOG);
@@ -89,17 +90,17 @@ public class ModblockLookTableProvider extends FabricBlockLootSubProvider {
         );
 
         //FOR SINGLE DROPS LIKE IF YOU WANT IT TO DROP SOMETHING SINGLE THEN USE createOreDrop
-        add(Modblocks.MAGIC_BLOCKS, createOreDrop(Modblocks.MAGIC_BLOCKS, Moditems.CHISEL));
+//        add(Modblocks.MAGIC_BLOCKS, createOreDrop(Modblocks.MAGIC_BLOCKS, Moditems.CHISEL));
         add(Modblocks.FLUROIT_DEEPSLATE_ORE, createOreDrop(Modblocks.FLUROIT_DEEPSLATE_ORE, Moditems.RAW_FLUROITE));
         add(Modblocks.FLUROIT_ORE, createOreDrop(Modblocks.FLUROIT_ORE, Moditems.RAW_FLUROITE));
         add(Modblocks.FLUROIT_END_ORE, createOreDrop(Modblocks.FLUROIT_END_ORE, Moditems.RAW_FLUROITE));
         add(Modblocks.FLUROIT_NETHER_ORE, createOreDrop(Modblocks.FLUROIT_NETHER_ORE, Moditems.RAW_FLUROITE));
 
         //IF YOU WANT THAT ENCHANTMENT SHOWS THE SKILLS THEN USE createMultipleOreDrops
-        add(Modblocks.FLUROIT_END_ORE, createMultipleOreDrops(Modblocks.FLUROIT_END_ORE, Moditems.RAW_FLUROITE, 5, 8));
-        add(Modblocks.FLUROIT_NETHER_ORE, createMultipleOreDrops(Modblocks.FLUROIT_NETHER_ORE, Moditems.RAW_FLUROITE, 5, 8));
-        add(Modblocks.FLUROIT_DEEPSLATE_ORE, createMultipleOreDrops(Modblocks.FLUROIT_DEEPSLATE_ORE, Moditems.RAW_FLUROITE, 5, 8));
-        add(Modblocks.FLUROIT_ORE, createMultipleOreDrops(Modblocks.FLUROIT_ORE, Moditems.RAW_FLUROITE, 5, 8));
+        add(Modblocks.FLUROIT_END_ORE, createMultipleOreDrops(Modblocks.FLUROIT_END_ORE, Moditems.RAW_FLUROITE, 2, 6));
+        add(Modblocks.FLUROIT_NETHER_ORE, createMultipleOreDrops(Modblocks.FLUROIT_NETHER_ORE, Moditems.RAW_FLUROITE, 2, 5));
+        add(Modblocks.FLUROIT_DEEPSLATE_ORE, createMultipleOreDrops(Modblocks.FLUROIT_DEEPSLATE_ORE, Moditems.RAW_FLUROITE, 2, 4));
+        add(Modblocks.FLUROIT_ORE, createMultipleOreDrops(Modblocks.FLUROIT_ORE, Moditems.RAW_FLUROITE, 2, 3));
         add(Modblocks.AETHERITE_ORE, createMultipleOreDrops(Modblocks.AETHERITE_ORE, Moditems.AETHERITE_INGOT, 2, 5));
 //        add(Modblocks.FLUROIT_DEEPSLATE_ORE,createMultipleOreDrops(Modblocks.FLUROIT_DEEPSLATE_ORE,Moditems.RAW_FLUROITE,5,8));
     }

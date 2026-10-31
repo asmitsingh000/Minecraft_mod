@@ -2,6 +2,7 @@ package net.asmit.pixle_lucia;
 
 import net.asmit.pixle_lucia.additionaltab.Creativetab;
 import net.asmit.pixle_lucia.blocks.Modblocks;
+import net.asmit.pixle_lucia.datagen.ModregisterLootTableModifications;
 import net.asmit.pixle_lucia.food.Modfood;
 import net.asmit.pixle_lucia.item.Moditems;
 import net.asmit.pixle_lucia.registries.ModCompostables;
@@ -31,6 +32,7 @@ public class Pixle_Lucia implements ModInitializer {
         ModCompostables.registerCompostables();
         ModFlammableBlocks.registerFlammableBlocks();
         ModStrippableBlocks.registerStrippableBlocks();
+        ModregisterLootTableModifications.registerLootTableModifications();
 	}
 
 }

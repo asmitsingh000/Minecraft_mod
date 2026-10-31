@@ -64,5 +64,21 @@
   "creaivemodtab.pixle_lucia.fluroite_armor": "Fluroite Armor",
   "creaivemodtab.pixle_lucia.fluroite_food": "Custom Foods",
   "creativemodtab.pixle_lucia.fluroite_crops": "Custom Crops",
-  "creaivemodtab.pixle_lucia.fluroite_fuels": "Custom Fuels"
+  "creaivemodtab.pixle_lucia.fluroite_fuels": "Custom Fuels",
+
+
+  "advancement.pixle_lucia.root.title": "Fluroite Awakens",
+  "advancement.pixle_lucia.root.description": "Find your first piece of Fluroite",
+  "advancement.pixle_lucia.armor_piece.title": "Crystal Plating",
+  "advancement.pixle_lucia.armor_piece.description": "Obtain any piece of Fluroite armor",
+  "advancement.pixle_lucia.full_armor.title": "Fully Fluroite",
+  "advancement.pixle_lucia.full_armor.description": "Obtain the complete Fluroite armor set",
+  "advancement.pixle_lucia.chisel.title": "Master Carver",
+  "advancement.pixle_lucia.chisel.description": "Obtain a Chisel",
+  "advancement.pixle_lucia.magic_found.title": "Relic of the End",
+  "advancement.pixle_lucia.magic_found.description": "Find a Magic Block in an End City",
+  "advancement.pixle_lucia.magic_used.title": "Alchemy of Stone",
+  "advancement.pixle_lucia.magic_used.description": "Use a Magic Block",
+  "advancement.pixle_lucia.king.title": "King of Fluroite",
+  "advancement.pixle_lucia.king.description": "Own every Fluroite tool, armor, the Chisel and a Magic Block"
 }
