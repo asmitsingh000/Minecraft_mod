@@ -1,0 +1,17 @@
+// 26.1.2	-999999999-01-01T00:00:00	Pixle_Lucia/Tags for minecraft:item
+473cabee39011a657972f37d3bbd53fed41d0299 data/minecraft/tags/item/axes.json
+7fc7a8816dfa05e061593c7d63c6e10c3125ab90 data/minecraft/tags/item/chest_armor.json
+ee79ba967ccb59cc7abc0e82b6883fe0da79ba65 data/minecraft/tags/item/foot_armor.json
+9bd1518b27c3eeb70343b92280631f55fea7c0af data/minecraft/tags/item/head_armor.json
+99f408156e3d8201ea1df5223c8c845cb69038b5 data/minecraft/tags/item/hoes.json
+0934f697e380fb0f511b08723dec794e2bd891b7 data/minecraft/tags/item/leaves.json
+22359f538107f49340e6a2091314b057190347bd data/minecraft/tags/item/leg_armor.json
+db69bfb1de59dc7a283e9c3f3a2c8321507ff80d data/minecraft/tags/item/logs_that_burn.json
+90a562e4a7663346a2083e376f7bf3f272c35ef1 data/minecraft/tags/item/pickaxes.json
+9bb4a453499a18d40bf3055f5438411ae8be8f76 data/minecraft/tags/item/planks.json
+a6b73afc570263132578dfe08095ad801fca77e6 data/minecraft/tags/item/saplings.json
+a3174240f1e1bb0c53ddf0aeec812fce733f6711 data/minecraft/tags/item/shovels.json
+7d380ab07cd29cb597638c13edb90b2b77aec457 data/minecraft/tags/item/spears.json
+037d5de064bfa7b363a266d877d9e5fe55ca06ec data/minecraft/tags/item/swords.json
+fb6768b0a80f5c3a10167e83121ba6c6b203917d data/pixle_lucia/tags/item/balsa_logs.json
+da890a51f0920a0a08e31d43dbeb2a728ca6fa4b data/pixle_lucia/tags/item/transformable_item.json

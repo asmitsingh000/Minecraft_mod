@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate",
+  "textures": {
+    "texture": "pixle_lucia:block/fluroite_block"
+  }
+}

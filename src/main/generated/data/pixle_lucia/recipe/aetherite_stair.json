@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "aetherite",
+  "key": {
+    "#": "pixle_lucia:aetherite_ingot"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "pixle_lucia:aetherite_stair"
+  }
+}

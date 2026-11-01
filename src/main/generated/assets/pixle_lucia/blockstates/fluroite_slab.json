@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "pixle_lucia:block/fluroite_slab"
+    },
+    "type=double": {
+      "model": "pixle_lucia:block/fluroite_block"
+    },
+    "type=top": {
+      "model": "pixle_lucia:block/fluroite_slab_top"
+    }
+  }
+}

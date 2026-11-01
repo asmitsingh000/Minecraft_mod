@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "pixle_lucia:block/strawberry_crop_stage3"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fluroite_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pixle_lucia:fluroite_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pixle_lucia:fluroite_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fluroite_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pixle_lucia:fluroite_slab"
+    ]
+  }
+}

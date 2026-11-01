@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "pixle_lucia:block/balsa_sapling"
+  }
+}

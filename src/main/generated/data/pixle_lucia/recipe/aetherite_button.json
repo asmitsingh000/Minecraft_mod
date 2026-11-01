@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "aetherite",
+  "ingredients": [
+    "pixle_lucia:aetherite_ingot"
+  ],
+  "result": {
+    "id": "pixle_lucia:aetherite_button"
+  }
+}

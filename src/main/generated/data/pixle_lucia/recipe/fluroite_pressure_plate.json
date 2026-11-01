@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "pixle_lucia:fluroite"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "pixle_lucia:fluroite_pressure_plate"
+  }
+}

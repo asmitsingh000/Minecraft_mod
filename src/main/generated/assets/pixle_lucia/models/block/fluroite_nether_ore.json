@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "pixle_lucia:block/fluroite_nether_ore"
+  }
+}

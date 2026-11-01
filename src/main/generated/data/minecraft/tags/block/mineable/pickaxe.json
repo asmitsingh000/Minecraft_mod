@@ -1,0 +1,24 @@
+{
+  "values": [
+    "pixle_lucia:fluroite_block",
+    "pixle_lucia:aetherite_block",
+    "pixle_lucia:raw_fluroite_block",
+    "pixle_lucia:fluroite_deepslate_ore",
+    "pixle_lucia:fluroite_end_ore",
+    "pixle_lucia:fluroite_nether_ore",
+    "pixle_lucia:aetherite_ore",
+    "pixle_lucia:fluroite_stair",
+    "pixle_lucia:fluroite_slab",
+    "pixle_lucia:aetherite_stair",
+    "pixle_lucia:aetherite_slab",
+    "pixle_lucia:fluroite_pressure_plate",
+    "pixle_lucia:fluroite_button",
+    "pixle_lucia:fluroite_gates",
+    "pixle_lucia:fluroite_trapdoors",
+    "pixle_lucia:aetherite_button",
+    "pixle_lucia:aetherite_pressure_plate",
+    "pixle_lucia:fluroite_walls",
+    "pixle_lucia:fluroite_ore",
+    "pixle_lucia:magic_blocks"
+  ]
+}

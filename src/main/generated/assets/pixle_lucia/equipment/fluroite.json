@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "pixle_lucia:fluroite"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "pixle_lucia:fluroite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "pixle_lucia:fluroite"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "pixle_lucia:pixlemod/root",
+  "criteria": {
+    "has_magic_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pixle_lucia:magic_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.pixle_lucia.magic_found.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "id": "pixle_lucia:magic_blocks"
+    },
+    "title": {
+      "translate": "advancement.pixle_lucia.magic_found.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_magic_block"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

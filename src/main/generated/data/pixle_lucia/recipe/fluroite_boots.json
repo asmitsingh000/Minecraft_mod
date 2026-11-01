@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": "pixle_lucia:fluroite"
+  },
+  "pattern": [
+    "   ",
+    "F F",
+    "F F"
+  ],
+  "result": {
+    "id": "pixle_lucia:fluroite_boots"
+  }
+}

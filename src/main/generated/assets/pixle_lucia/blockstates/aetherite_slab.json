@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "pixle_lucia:block/aetherite_slab"
+    },
+    "type=double": {
+      "model": "pixle_lucia:block/aetherite_block"
+    },
+    "type=top": {
+      "model": "pixle_lucia:block/aetherite_slab_top"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "parent": "pixle_lucia:pixlemod/magic_found",
+  "criteria": {
+    "used_magic_block": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.pixle_lucia.magic_used.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "id": "pixle_lucia:fluroite"
+    },
+    "title": {
+      "translate": "advancement.pixle_lucia.magic_used.title"
+    }
+  },
+  "requirements": [
+    [
+      "used_magic_block"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

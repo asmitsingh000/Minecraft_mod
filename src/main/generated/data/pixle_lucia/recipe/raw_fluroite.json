@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "fluroite",
+  "ingredients": [
+    "pixle_lucia:raw_fluroite_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "pixle_lucia:raw_fluroite"
+  }
+}

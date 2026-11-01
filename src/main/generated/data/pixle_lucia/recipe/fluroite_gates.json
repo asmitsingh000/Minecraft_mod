@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "fluroite",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "pixle_lucia:fluroite"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "pixle_lucia:fluroite_gates"
+  }
+}

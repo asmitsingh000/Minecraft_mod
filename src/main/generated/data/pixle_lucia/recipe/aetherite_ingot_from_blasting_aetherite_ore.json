@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 12.0,
+  "group": "aetherite",
+  "ingredient": "pixle_lucia:aetherite_ore",
+  "result": {
+    "id": "pixle_lucia:aetherite_ingot"
+  }
+}

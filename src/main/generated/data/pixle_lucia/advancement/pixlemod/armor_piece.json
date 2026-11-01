@@ -1,0 +1,65 @@
+{
+  "parent": "pixle_lucia:pixlemod/root",
+  "criteria": {
+    "has_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pixle_lucia:fluroite_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pixle_lucia:fluroite_chestplate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pixle_lucia:fluroite_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pixle_lucia:fluroite_leggings"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.pixle_lucia.armor_piece.description"
+    },
+    "icon": {
+      "id": "pixle_lucia:fluroite_chestplate"
+    },
+    "title": {
+      "translate": "advancement.pixle_lucia.armor_piece.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_helmet",
+      "has_chestplate",
+      "has_leggings",
+      "has_boots"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

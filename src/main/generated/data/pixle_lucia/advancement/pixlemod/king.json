@@ -1,0 +1,67 @@
+{
+  "parent": "pixle_lucia:pixlemod/magic_used",
+  "criteria": {
+    "has_everything": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pixle_lucia:fluroite_helmet"
+          },
+          {
+            "items": "pixle_lucia:fluroite_chestplate"
+          },
+          {
+            "items": "pixle_lucia:fluroite_leggings"
+          },
+          {
+            "items": "pixle_lucia:fluroite_boots"
+          },
+          {
+            "items": "pixle_lucia:fluroite_sword"
+          },
+          {
+            "items": "pixle_lucia:fluroite_pickaxe"
+          },
+          {
+            "items": "pixle_lucia:fluroite_axe"
+          },
+          {
+            "items": "pixle_lucia:fluroite_hoe"
+          },
+          {
+            "items": "pixle_lucia:fluroite_spear"
+          },
+          {
+            "items": "pixle_lucia:chisel"
+          },
+          {
+            "items": "pixle_lucia:magic_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.pixle_lucia.king.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "id": "pixle_lucia:fluroite_sword"
+    },
+    "title": {
+      "translate": "advancement.pixle_lucia.king.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_everything"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

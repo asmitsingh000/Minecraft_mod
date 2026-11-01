@@ -1,0 +1,21 @@
+// 26.1.2	-999999999-01-01T00:00:00	Pixle_Lucia/Tags for minecraft:block
+82b054c3e8449c9228dc8ff04c6c4f4ae5f38108 data/minecraft/tags/block/buttons.json
+b0d6d953a49a48550633e826c47848cc4269d43e data/minecraft/tags/block/crops.json
+b7a5a89f3cfb4de952830b86b33cff52a53aab8d data/minecraft/tags/block/fence_gates.json
+d4c0ffc38553c07f6054a70e2fe4b0b9afa36846 data/minecraft/tags/block/fences.json
+06468b6e36e32070734dfe345d102026ac0d492c data/minecraft/tags/block/flower_pots.json
+4c06f607938359d6ed8204d16d4abdd19227e14c data/minecraft/tags/block/incorrect_for_diamond_tool.json
+0934f697e380fb0f511b08723dec794e2bd891b7 data/minecraft/tags/block/leaves.json
+db69bfb1de59dc7a283e9c3f3a2c8321507ff80d data/minecraft/tags/block/logs.json
+df096fe4eddda8a65d869059310a93e2c8a3808f data/minecraft/tags/block/mineable/axe.json
+b11863483f00b92c85ac73d006d4047b92e777e8 data/minecraft/tags/block/mineable/pickaxe.json
+199911a2b8e3a50b1cc4e86ad36614375f0c5065 data/minecraft/tags/block/needs_diamond_tool.json
+32a1248262d14e24fdb60f18ba571e51354636d8 data/minecraft/tags/block/needs_iron_tool.json
+9bb4a453499a18d40bf3055f5438411ae8be8f76 data/minecraft/tags/block/planks.json
+5a5a07051b655ee94ddef0906bfa051b9273eb9e data/minecraft/tags/block/pressure_plates.json
+a6b73afc570263132578dfe08095ad801fca77e6 data/minecraft/tags/block/saplings.json
+22c4df82e560759bfe7a30f780efec8025b1d342 data/minecraft/tags/block/slabs.json
+d479b19010cc96eb804cda16c9fdc202638afe5d data/minecraft/tags/block/stairs.json
+7eead99ddf9be10455af7a344e459e975d0afccd data/minecraft/tags/block/walls.json
+3831710807c9ea2bce2ef54a56000246c5cf174e data/pixle_lucia/tags/block/balsa_logs.json
+e01aa36c0e2c4cf1c32032ad72ce2cb5370cd9b4 data/pixle_lucia/tags/block/need_fluroite_tools.json

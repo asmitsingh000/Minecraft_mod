@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "pixle_lucia:block/balsa_log_top",
+    "side": "pixle_lucia:block/balsa_log"
+  }
+}

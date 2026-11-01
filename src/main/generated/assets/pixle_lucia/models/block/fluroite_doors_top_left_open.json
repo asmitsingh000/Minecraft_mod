@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "textures": {
+    "bottom": "pixle_lucia:block/fluroite_doors_bottom",
+    "top": "pixle_lucia:block/fluroite_doors_top"
+  }
+}

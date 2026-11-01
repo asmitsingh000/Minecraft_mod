@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "pixle_lucia:block/fluroite_block"
+  }
+}

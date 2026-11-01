@@ -1,0 +1,32 @@
+{
+  "parent": "pixle_lucia:pixlemod/root",
+  "criteria": {
+    "has_chisel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pixle_lucia:chisel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.pixle_lucia.chisel.description"
+    },
+    "icon": {
+      "id": "pixle_lucia:chisel"
+    },
+    "title": {
+      "translate": "advancement.pixle_lucia.chisel.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_chisel"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

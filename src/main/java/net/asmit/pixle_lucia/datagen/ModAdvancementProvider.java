@@ -112,11 +112,10 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                         Moditems.FLUROITE_PICKAXE,
                         Moditems.FLUROITE_AXE,
                         Moditems.FLUROITE_HOE,
-                        Moditems.FLUROITE_SPEAR,
-                        Moditems.CHISEL,
-                        Modblocks.MAGIC_BLOCKS))
+                        Moditems.FLUROITE_SPEAR))
                 .rewards(AdvancementRewards.Builder.experience(100))
                 .save(output, id("king"));
+
     }
 
     private static String id(String name) {

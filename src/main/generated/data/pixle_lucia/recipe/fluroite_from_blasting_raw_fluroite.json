@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 12.0,
+  "group": "fluroite",
+  "ingredient": "pixle_lucia:raw_fluroite",
+  "result": {
+    "id": "pixle_lucia:fluroite"
+  }
+}

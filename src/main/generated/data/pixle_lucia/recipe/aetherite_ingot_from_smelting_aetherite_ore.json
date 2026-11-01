@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 300,
+  "experience": 0.3,
+  "group": "aetherite",
+  "ingredient": "pixle_lucia:aetherite_ore",
+  "result": {
+    "id": "pixle_lucia:aetherite_ingot"
+  }
+}
