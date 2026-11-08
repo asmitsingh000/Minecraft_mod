@@ -7,7 +7,7 @@ This project is made as a quest given by Lucia in pixel. And this mod add custom
 
 ## How to download and play this mod ?
 This mod is made for minecraft java 1.26.1.2 in a fabric loader 19.2 
-Link :- https://github.com/asmitsingh000/Minecraft_mod/releases/tag/v1.0.0
+Link :- [https://github.com/asmitsingh000/Minecraft_mod/releases/tag/v1.0.0](https://github.com/asmitsingh000/Minecraft_mod/releases/download/v1.0.0/pixle_lucia-1.0.0.26.1.2.jar)
 
 ## License
 
