@@ -5,8 +5,9 @@ In this mod we have new ores, new armor, new type of trees and some new things,
 ## WHY THIS PROJECT IS MADE && WHAT IT DOES ?
 This project is made as a quest given by Lucia in pixel. And this mod add custom ores, armor, new type of trees and some exclusive blocks which will just a unique block, you will get a unique item chisel as a bulding tools. 
 
-## Setup
+## How to download and play this mod ?
 This mod is made for minecraft java 1.26.1.2 in a fabric loader 19.2 
+Link :- https://github.com/asmitsingh000/Minecraft_mod/releases/tag/v1.0.0
 
 ## License
 
