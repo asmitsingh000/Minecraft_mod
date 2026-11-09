@@ -39,10 +39,9 @@ The objective was to create a Minecraft mod that introduces custom content and g
 
 What started as a quest became a playable Fabric mod that others can download, explore, and enjoy.
 
-📥 Installation & Download
+# Installation & Download
 
-<details>
-<summary><strong>Requirements</strong></summary>
+## Requirments
 
 Component
 - Minecraft Java Edition   26.1.2
