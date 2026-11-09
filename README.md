@@ -125,7 +125,7 @@ Want to explore how Pixle Lucia works?
 
 The complete source code is available on GitHub.
 
-Explore this repository :- 
+Explore this repository :- https://github.com/asmitsingh000/Minecraft_mod
 
 ## License
 
